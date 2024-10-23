@@ -28,22 +28,7 @@
     }
   },
   "background": {
-    "service_worker": "worker.js",
-    "scripts": [
-      "/core/utils/log.js",
-      "/core/open.js",
-      "/core/offscreen/firefox/polyfill.js",
-      "/core/offscreen.js",
-      "/core/context.js",
-      "/core/button.js",
-      "/core/sound.js",
-      "/core/utils/sax.js",
-      "/core/utils/feed.js",
-      "/core/check.js",
-      "/core/repeater.js",
-      "/core/watch.js",
-      "/worker.js"
-    ]
+    "service_worker": "worker.js"
   },
   "options_ui": {
     "page": "/data/options/index.html",
@@ -58,11 +43,5 @@
     "48": "/data/icons/red/48.png",
     "64": "/data/icons/red/64.png",
     "128": "/data/icons/red/128.png"
-  },
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "jid0-GjwrPchS3Ugt7xydvqVK4DQk8Ls@jetpack",
-      "strict_min_version": "128.0"
-    }
   }
 }
