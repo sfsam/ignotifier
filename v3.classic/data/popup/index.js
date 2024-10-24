@@ -472,7 +472,10 @@ const scheme = {
   },
   light() {
     document.documentElement.classList.remove('dark');
-    qs('iframe').contentDocument.documentElement.classList.remove('dark');
+    try {
+      qs('iframe').contentDocument.documentElement.classList.remove('dark');
+    }
+    catch (e) {}
   }
 };
 qs('iframe').addEventListener('load', () => {
